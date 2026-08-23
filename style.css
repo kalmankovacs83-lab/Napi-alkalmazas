@@ -1,0 +1,74 @@
+* { /* A csillag univerzális kijelölés: A mögötte lévő szabályok a teljes HTML állományra vonatkoznak */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* A teljes nézetablak magasságának 100%-a */
+    transition: all 0.8s ease;
+    background-color: #eceff1;
+}
+
+/* Dinamikus évszak háttérszínek */
+body.tavasz { background: linear-gradient(135deg, #a8e063, #56ab2f); }
+body.nyar { background: linear-gradient(135deg, #ff8c00, #fffc00); }
+body.osz { background: linear-gradient(135deg, #e55d87, #5fc3e4); }
+body.tel { background: linear-gradient(135deg, #83a4d4, #b6fbff); }
+
+.card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    text-align: center;
+    max-width: 420px;
+    width: 90%;
+}
+
+.datetime {
+    font-size: 1.1rem; /* A rem-ben megadott betűméret a reszponzivitás miatt fontos */
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: #ddd;
+    margin-bottom: 20px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.badge {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #222;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 10px 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.day-message {
+    background: #ffffff;
+    padding: 18px;
+    border-radius: 12px;
+    font-size: 1.05rem;
+    color: #333;
+    line-height: 1.4;
+    font-weight: 500;
+    border-left: 5px solid #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
